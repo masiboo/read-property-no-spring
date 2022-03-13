@@ -1,6 +1,6 @@
 package org.example;
 
-public class ReadProfWithoutLibApp {
+public class ReadPropWithoutLibApp {
 
     public static void main(String[] args) {
 

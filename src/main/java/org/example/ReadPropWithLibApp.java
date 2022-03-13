@@ -1,8 +1,6 @@
 package org.example;
 
-import java.io.IOException;
-
-public class ReadProfWithLibApp {
+public class ReadPropWithLibApp {
 
     public static void main(String[] args) {
 
