@@ -14,4 +14,6 @@ This is simple example to read property using apache common and beanutils librar
             <groupId>commons-beanutils</groupId>
             <artifactId>commons-beanutils</artifactId>
             <version>1.9.4</version>
-        </dependency>
+        </depenency>
+
+Here is another way to read property without any 3rd party library. 
