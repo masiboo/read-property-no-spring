@@ -6,13 +6,13 @@ import org.apache.commons.configuration2.builder.FileBasedConfigurationBuilder;
 import org.apache.commons.configuration2.builder.fluent.Parameters;
 import org.apache.commons.configuration2.ex.ConfigurationException;
 
-public class PropertyLoader {
+public class PropertyLoaderWithLib {
 
-    private static PropertyLoader instance;
+    private static PropertyLoaderWithLib instance;
     private FileBasedConfiguration configuration;
 
 
-    private PropertyLoader() {
+    private PropertyLoaderWithLib() {
         Parameters params = new Parameters();
         FileBasedConfigurationBuilder<FileBasedConfiguration> builder =
                 new FileBasedConfigurationBuilder<FileBasedConfiguration>(PropertiesConfiguration.class)
@@ -25,9 +25,9 @@ public class PropertyLoader {
         }
     }
 
-    public static synchronized PropertyLoader getInstance() {
+    public static synchronized PropertyLoaderWithLib getInstance() {
         if (instance == null) {
-            instance = new PropertyLoader();
+            instance = new PropertyLoaderWithLib();
         }
         return instance;
     }
